@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PDF Compressor</title>
+  <style>
+    body {
+      font-family: Arial;
+      max-width: 400px;
+      margin: 50px auto;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>PDF Compressor</h2>
+
+  <input type="file" id="pdfInput" accept="application/pdf"><br><br>
+
+  <button onclick="compressPDF()">Compress</button>
+
+  <p id="status"></p>
+
+  <a id="downloadLink" style="display:none;" download="compressed.pdf">
+    Download Compressed PDF
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
